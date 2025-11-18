@@ -1,3 +1,8 @@
+# Resources used:
+https://stackoverflow.com/questions/37891954 keras-how-do-i-predict-after-i-trained-a-model
+https://stackoverflow.com/questions/44747343/keras-input-explanation-input-shape-units-batch-size-dim-etc
+https://keras.io/guides/sequential_model
+
 # Print the number of trainable parameters in the model
 Number of trainable parameters: 394530
 
