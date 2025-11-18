@@ -1,42 +1,20 @@
-# First Run
+# Print the number of trainable parameters in the model
+Number of trainable parameters: 394530
 
-Epoch 1/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 3s 7ms/step - accuracy: 0.7823 - loss: 0.6193 - val_accuracy: 0.8185 - val_loss: 0.5208
-Epoch 2/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.8617 - loss: 0.3934 - val_accuracy: 0.8691 - val_loss: 0.3735
-Epoch 3/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 3s 7ms/step - accuracy: 0.8843 - loss: 0.3288 - val_accuracy: 0.8656 - val_loss: 0.3636
-Epoch 4/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 3s 7ms/step - accuracy: 0.9007 - loss: 0.2764 - val_accuracy: 0.8797 - val_loss: 0.3412
-Epoch 5/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 3s 7ms/step - accuracy: 0.9103 - loss: 0.2433 - val_accuracy: 0.8930 - val_loss: 0.3034
-Epoch 6/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.9239 - loss: 0.2093 - val_accuracy: 0.8867 - val_loss: 0.3260
-Epoch 7/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.9320 - loss: 0.1878 - val_accuracy: 0.8978 - val_loss: 0.3016
-Epoch 8/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.9406 - loss: 0.1599 - val_accuracy: 0.8958 - val_loss: 0.3044
-Epoch 9/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.9537 - loss: 0.1312 - val_accuracy: 0.8984 - val_loss: 0.3196
-Epoch 10/10
-375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.9563 - loss: 0.1194 - val_accuracy: 0.8951 - val_loss: 0.3300
-Model: "sequential"
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
-┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
-│ conv2d (Conv2D)                      │ (None, 26, 26, 28)          │             280 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ max_pooling2d (MaxPooling2D)         │ (None, 13, 13, 28)          │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ conv2d_1 (Conv2D)                    │ (None, 11, 11, 56)          │          14,168 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ flatten (Flatten)                    │ (None, 6776)                │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ dense (Dense)                        │ (None, 56)                  │         379,512 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ dense_1 (Dense)                      │ (None, 10)                  │             570 │
-└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
- Total params: 1,183,592 (4.52 MB)
- Trainable params: 394,530 (1.51 MB)
- Non-trainable params: 0 (0.00 B)
- Optimizer params: 789,062 (3.01 MB)
+# Evaluate training and validation accuracy at the end of each epoch, and plot them as line plots on the same set of axes.
+![Training History](imgs/training_validation_accuracy_loss.png)
+
+# Evaluate accuracy on the test set.
+313/313 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - accuracy: 0.9103 - loss: 0.3278
+
+# Show an example from the test set for each class where the model misclassifies.
+
+
+
+
+# Comment on any other observations about the model performance
+-first run through final epoch resulted in an accuracy around 0.977~ 
+-Inconsistency between multiple runs, it tends to perform better when I'm not playing video games (LOL).
+    However, I read that you could use your GPU to run these computations instead of your CPU through "CUDA"
+    so I plan on implementing that. 
+-I asked other classmates through the discord to capture a general range for the final test accuracy.
