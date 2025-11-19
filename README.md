@@ -1,6 +1,6 @@
 # Fashion-MNIST Image Classification
 
-A Convolutional Neural Network (CNN) implementation for classifying ![Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset images into 10 clothing categories using TensorFlow/Keras.
+A Convolutional Neural Network (CNN) implementation for classifying [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset images into 10 clothing categories using TensorFlow/Keras.
 
 ## Overview
 
