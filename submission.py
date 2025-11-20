@@ -110,7 +110,7 @@ displayed_classes = set()
 plt.figure(figsize=(5, 5))
 count = 0
 for idx in misclassified_indices:
-    if count == 6:
+    if count == 9:
         break
     true_label = y_test[idx]
     if true_label not in displayed_classes:
