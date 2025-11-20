@@ -4,7 +4,7 @@
 ### Q1. Number of trainable parameters in the model
 Number of trainable parameters: **394530**
 ### Q2. Trends between Training and Validation Accuracy At The End Of Each Epoch
-![Training History](imgs/training_validation_accuracy_loss.png)
+![Training History](images/training_validation_accuracy_loss.png)
 ### Q3. Evaluate accuracy on the test set
 Final Test Accuracy: **0.909500002861023**
 
@@ -13,7 +13,7 @@ Other Tests (Playing around with the layers):
 - Final Test Accuracy: 0.9041000008583069 @ 20 epochs using 2 additional convolution layers + 1 additional maxpooling layer
 
 ### Q4.Examples of Misclassifcation (Test Set)
-![Misclassification](imgs/misclassified_examples.png)
+![Misclassification](images/misclassified_examples.png)
 
 - 0   T-shirt/top
 - 1	Trouser
